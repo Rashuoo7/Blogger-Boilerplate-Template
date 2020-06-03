@@ -18,7 +18,7 @@ const gulp = require('gulp'),
       versions: ['last 2 browsers']
     },
     pug: {
-      pretty: false
+      pretty: true
     },
     sass: {
       outputStyle: 'compressed'
@@ -62,9 +62,9 @@ gulp.task('babel', () =>
   .pipe(gulp.dest(options.paths.js))
 )
 
-// Watchers
-gulp.task('default', () => {
-  gulp.watch(`${options.paths.pug}/**/*.pug`, ['pug'])
-  gulp.watch(`${options.paths.sass}/**/*.scss`, ['sass'])
-  gulp.watch(`${options.paths.es6}/**/*.js`, ['babel'])
-})
+// // Watchers
+// gulp.task('default', () => {
+//   gulp.watch(`${options.paths.pug}/**/*.pug`, ['pug'])
+//   gulp.watch(`${options.paths.sass}/**/*.scss`, ['sass'])
+//   gulp.watch(`${options.paths.es6}/**/*.js`, ['babel'])
+// })
