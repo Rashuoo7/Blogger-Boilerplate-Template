@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+
+html(
+  b:css='false' b:js='false' b:responsive='true'
+  b:version='2' expr:dir='data:blog.locale.languageDirection'
+  expr:lang='data:blog.locale.language' prefix='og: http://ogp.me/ns#'
+)
+
+  head
+    //- Metadata
+    include includes/head
+    //- General Styles
+    include includes/styles
+
+  body
+    //- Blog
+    include includes/widgets/blog
+    script
+      include assets/js/main.js
